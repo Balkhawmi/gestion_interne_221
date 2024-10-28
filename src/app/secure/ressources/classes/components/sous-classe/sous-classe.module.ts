@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { SousClasseRoutingModule } from './sous-classe-routing.module';
 import { SousClasseComponent } from './sous-classe.component';
 import { ClassesModule } from '../../classes.module';
+import { SharedModule } from 'src/app/secure/shared/shared.module';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { ClassesModule } from '../../classes.module';
   imports: [
     CommonModule,
     SousClasseRoutingModule,
-    ClassesModule
+    ClassesModule,
+    SharedModule
   ]
 })
 export class SousClasseModule { }

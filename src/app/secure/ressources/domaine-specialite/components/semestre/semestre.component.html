@@ -2,9 +2,7 @@
 <div class="bg-gray-50 p-3 rounded-md">
   <div class="flex mt-3 bg-white shadow-lg p-3">
       <div class="flex">
-        <select class="p-1 border border-gray-300 rounded-md focus:outline-beige shadow-md ml-2">
-          <option>Niveau</option>
-        </select>
+        <app-select-personnalise [options]="niveau" placeholder="Choisir le niveau"class="ml-2" ></app-select-personnalise>
           <input type="text" placeholder="Domaine" class="p-1 border border-gray-300 rounded-md focus:outline-beige shadow-md w-64 ml-2" />
           <input type="number" placeholder="Durée (mois)" class="p-1 border border-gray-300 rounded-md focus:outline-beige shadow-md ml-2" />
           <button class="bg-rouge text-white px-3 py-1 rounded-md ml-4">Créer</button>

@@ -2,9 +2,7 @@
 <div class="bg-gray-50 p-3 rounded-md">
   <div class="flex mt-3 bg-white shadow-lg p-3">
       <div class="flex">
-        <select class="p-1 border border-gray-300 rounded-md focus:outline-beige shadow-md ml-2">
-          <option>choisir le domaine</option>
-        </select>
+        <app-select-personnalise [options]="domaine" placeholder="Choisir le domaine"  ></app-select-personnalise>
           <input type="text" placeholder="mention" class="p-1 border border-gray-300 rounded-md focus:outline-beige shadow-md w-64 ml-2" />
           <button class="bg-rouge text-white px-3 py-1 rounded-md ml-4">Créer</button>
       </div>

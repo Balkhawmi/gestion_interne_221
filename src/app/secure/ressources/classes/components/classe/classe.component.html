@@ -2,18 +2,9 @@
 
 <div class="bg-gray-50 p-3 rounded-md">
   <div class="grid grid-cols-6 gap-2 mt-4 bg-white shadow-lg p-3">
-      <select
-          class="p-1 border border-gray-300 rounded-md focus:outline-beige shadow-md">
-          <option>Choisir le domaine</option>
-      </select>
-      <select
-          class="p-1 border border-gray-300 rounded-md focus:outline-beige shadow-md">
-          <option>Choisir la spécialité</option>
-      </select>
-      <select
-          class="p-1 border border-gray-300 rounded-md focus:outline-beige shadow-md">
-          <option>Choisir le niveau</option>
-      </select>
+    <app-select-personnalise [options]="domaine" placeholder="Choisir le domaine"  ></app-select-personnalise>
+    <app-select-personnalise [options]="specialite" placeholder="Choisir la specialite" class="ml-2" ></app-select-personnalise>
+    <app-select-personnalise [options]="niveau" placeholder="Choisir le niveau" class="ml-2" ></app-select-personnalise>
       <input type="text" placeholder="Code"
           class="p-1 border border-gray-300 rounded-md focus:outline-beige shadow-md" />
       <input type="text" placeholder="Classe"

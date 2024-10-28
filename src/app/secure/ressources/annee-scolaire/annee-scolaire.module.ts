@@ -14,6 +14,8 @@ import { RessourcesModule } from '../ressources.module';
     CommonModule,
     AnneeScolaireRoutingModule,
     RessourcesModule
+  ],exports: [
+    AnneeScolaireComponent
   ]
 })
 export class AnneeScolaireModule { }
