@@ -14,6 +14,9 @@ import { RessourcesModule } from '../ressources.module';
     CommonModule,
     ParametreRoutingModule,
     RessourcesModule
+  ],
+  exports: [
+    ParametreComponent
   ]
 })
 export class ParametreModule { }

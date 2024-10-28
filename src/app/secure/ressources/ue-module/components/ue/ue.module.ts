@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { UeRoutingModule } from './ue-routing.module';
 import { UeComponent } from './ue.component';
 import { UeModuleModule } from '../../ue-module.module';
+import { SharedModule } from 'src/app/secure/shared/shared.module';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { UeModuleModule } from '../../ue-module.module';
   imports: [
     CommonModule,
     UeRoutingModule,
-    UeModuleModule
+    UeModuleModule,
+    SharedModule
   ]
 })
 export class UeModule { }

@@ -11,13 +11,7 @@
   </div>
 
   <div class="flex items-center space-x-6">
-    <div class="relative inline-block p-2">
-      <i class="fas fa-calendar-days text-beige absolute top-1/2 left-3 transform -translate-y-1/2 pointer-events-none"></i>
-      <select class="appearance-none w-full p-2 pl-6 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-blue-300">
-          <option value="2023-2024">Année-scolaire: 2023-2024</option>
-          <option value="2024-2025">Année-scolaire: 2024-2025</option>
-      </select>
-  </div>
+    <app-select-personnalise [options]="anneeScolaire" placeholder="Choisir année scolaire" iconClass="fas fa-calendar-days text-beige"></app-select-personnalise>
 
     <div class="">
       <button type="button" class="group relative block">

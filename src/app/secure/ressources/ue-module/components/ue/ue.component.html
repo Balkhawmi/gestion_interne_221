@@ -2,12 +2,9 @@
 <div class="bg-gray-50 p-3 rounded-md">
   <div class="flex mt-1 bg-white shadow-lg p-3">
       <div class="flex">
-          <select
-          class="p-1 border border-gray-300 rounded-md focus:outline-[#B89A53] shadow-md">
-          <option>Choisir le domaine</option>
-      </select>
-          <input type="text" placeholder="Domaine" class="p-1 border border-gray-300 rounded-md focus:outline-[#B89A53] shadow-md ml-2" />
-          <input type="text" placeholder="U.E (Unité d’enseignement)" class="p-1 border border-gray-300 rounded-md focus:outline-[#B89A53] shadow-md ml-2" />
+        <app-select-personnalise [options]="mention" placeholder="Choisir la mention"  ></app-select-personnalise>
+          <input type="text" placeholder="Code" class="p-1 border border-gray-300 rounded-md focus:outline-[#B89A53] shadow-md ml-2" />
+          <input type="text" placeholder="Unité d’enseignement (U.E)" class="p-1 border border-gray-300 rounded-md focus:outline-[#B89A53] shadow-md ml-2" />
           <button class="bg-[#C9151B] text-white px-3 py-1 rounded-md ml-4">Créer</button>
       </div>
   </div>

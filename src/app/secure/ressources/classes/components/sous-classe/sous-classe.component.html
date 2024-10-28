@@ -1,12 +1,10 @@
 <app-classes></app-classes>
 <div class="bg-gray-50 p-3 rounded-md">
   <div class="grid grid-cols-6 gap-2 mt-4 bg-white shadow-lg p-3">
-      <select
-          class="p-1 border border-gray-300 rounded-md focus:outline-beige shadow-md">
-          <option>Choisir le classe</option>
-      </select>
+    <app-select-personnalise [options]="classe" placeholder="Choisir la classe"  ></app-select-personnalise>
+
       <input type="text" placeholder="Sous-classe"
-          class="p-1 border border-gray-300 rounded-md focus:outline-beige shadow-md" />
+          class="ml-2 p-1 border border-gray-300 rounded-md focus:outline-beige shadow-md" />
       <button
           class="bg-rouge text-white px-4 py-1 rounded-md">Créer</button>
   </div>

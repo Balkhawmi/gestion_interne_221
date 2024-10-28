@@ -11,4 +11,9 @@ export class HeaderComponent {
   onToggleSidebar() {
     this.toggleSidebar.emit();
   }
+
+  anneeScolaire = [
+    { label: 'Année: 2023-2024', value: '2023-2024' },
+    { label: 'Année: 2024-2025', value: '2024-2025' }
+  ];
 }

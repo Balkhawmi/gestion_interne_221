@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { ClasseRoutingModule } from './classe-routing.module';
 import { ClasseComponent } from './classe.component';
 import { ClassesModule } from '../../classes.module';
+import { SharedModule } from 'src/app/secure/shared/shared.module';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { ClassesModule } from '../../classes.module';
   imports: [
     CommonModule,
     ClasseRoutingModule,
-    ClassesModule
+    ClassesModule,
+    SharedModule
   ]
 })
 export class ClasseModule { }

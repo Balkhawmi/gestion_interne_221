@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./semestre.component.css']
 })
 export class SemestreComponent {
-
+  niveau = [
+    { label: 'Niveau 1', value: 'N1' },
+    { label: 'Niveau 2', value: 'N2' }
+  ];
 }

@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./ue.component.css']
 })
 export class UeComponent {
-
+  mention = [
+    { label: 'Mention 1', value: 'M1' },
+    { label: 'Mention 2', value: 'M2' }
+  ];
 }

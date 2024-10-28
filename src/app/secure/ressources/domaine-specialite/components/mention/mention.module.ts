@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { MentionRoutingModule } from './mention-routing.module';
 import { MentionComponent } from './mention.component';
 import { DomaineSpecialiteModule } from '../../domaine-specialite.module';
+import { SharedModule } from 'src/app/secure/shared/shared.module';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { DomaineSpecialiteModule } from '../../domaine-specialite.module';
   imports: [
     CommonModule,
     MentionRoutingModule,
-    DomaineSpecialiteModule
+    DomaineSpecialiteModule,
+    SharedModule
   ]
 })
 export class MentionModule { }

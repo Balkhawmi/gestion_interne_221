@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { SidebarComponent } from './public/layout/components/sidebar/sidebar.component';
 import { HeaderComponent } from './public/layout/components/header/header.component';
 import { MenuComponent } from './public/layout/components/menu/menu.component';
+import { FormsModule } from '@angular/forms';
+import { SharedModule } from './secure/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { MenuComponent } from './public/layout/components/menu/menu.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
